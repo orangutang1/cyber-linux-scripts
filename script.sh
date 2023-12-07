@@ -145,7 +145,19 @@ echo "updating software(s)"
 sudo apt -y autoremove
 sudo apt update
 sudo apt -y upgrade
+echo "Add users"
+echo "What users do you want to add? Type stop to stop."
+read
+ans=$REPLY
+if [ $ans == 'stop' ]; then
+    echo "Stopping."
+else
+    echo "Name of user:" 
 
+
+
+
+    
 echo "remove ALL mp3/mp4 files? [y/n]"
 echo "WARNING, THIS IS NOT REVERSIBLE . . . OR SOMETHING"
 read
